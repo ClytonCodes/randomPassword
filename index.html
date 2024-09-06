@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Pass Gen</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Random Password Generator</h1>
+        <p>This generates a password based on your options</p>
+        <p>Options : </p>
+        <p>Enter the length of your password</p>
+        <input type="number" id="length" min="0">
+        <div class="options">
+            <div class="inc lowercase">
+                <input type="checkbox" id="include-lowercase">
+                <label for="include-lowercase">Include Lowercase </label>
+            </div>
+            <div class="inc uppercase">
+                <input type="checkbox" id="include-uppercase">
+                <label for="include-uppercase">Include uppercase </label>
+            </div>
+            <div class="inc numbers">
+                <input type="checkbox" id="include-numbers">
+                <label for="include-numbers">Include Numbers </label>
+            </div>
+            <div class="inc symbols">
+                <input type="checkbox" id="include-symbols">
+                <label for="include-symbols">Include Symbols</label>
+            </div>
+        </div>
+        <button id="generate">Generate</button>
+
+        <p id="checks"></p>;
+
+        <div class="pass">
+            <p id="password">Your password is : </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

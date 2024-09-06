@@ -1,0 +1,128 @@
+*{
+    padding : 0;
+    margin : 0;
+    border : none;
+    font-family: "Montserrat", sans-serif;
+}   
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root{
+    --background : #CA054D;
+    --text : #ffcf9c;
+    --box : #3B1C32;
+}
+
+body {
+    background-color: var(--background);
+    display : flex;
+    justify-content: center;
+}
+
+.main{
+    width : 500px;
+    background-color: var(--box);
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    margin : 20px;
+    border-radius: 15px;    
+}
+
+h1{
+    font-size : 1.7rem;
+    margin : 15px;
+    color : var(--text);
+    padding-bottom : 20px;
+    border-bottom : 2px solid var(--text);
+}
+
+p{
+    color : var(--text);
+    font-size : 1.1rem;
+    margin : 15px;
+}
+
+label{
+    color : var(--box);
+    font-weight: bold;
+}
+
+input{
+    background-color: #ffcf9c;
+    color: black;
+}
+
+.options{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    width : 200px;
+}
+
+.inc{
+    margin : 10px;
+    background-color: #B96D40;
+    width : 100%;
+    border-radius: 15px;
+    padding : 5px 20px;
+}
+
+button{
+    font-size: large;
+    margin : 20px;
+    width : 150px;
+    height : 40px;
+    border-radius: 20px;
+    font-weight : 600;
+    background-color: #A4D4B4;
+    color : black;
+}
+
+.pass{
+    height : 60px;
+    margin-top : 10px;
+    width: 100%;
+    border-radius: inherit;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#password{
+    color: var(--box);
+    font-weight: bolder;
+    font-size: large;
+}
+
+#length{
+    margin-bottom : 10px;
+    height : 30px;
+    width : 300px;
+    border-radius : 20px;
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+}
+
+#length:focus{
+    outline: none;
+}
+
+button:active{
+    background-color: white;
+}
+
+#checks{
+    color: var(--text);
+    font-weight: bolder;
+    font-size: large;
+}
